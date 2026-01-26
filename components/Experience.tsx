@@ -136,7 +136,7 @@ export default function Experience() {
 
               {/* Content */}
               <div
-                className={`flex-1 ${index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"
+                className={`flex-1 ${index % 2 === 0 ? "md:pr-12" : "md:pl-12"
                   }`}
               >
                 <div className="bg-card border border-border rounded-xl p-6 hover:border-cyan-500 transition-all duration-300 ml-8 md:ml-0 shadow-sm hover:shadow-md">
@@ -148,10 +148,10 @@ export default function Experience() {
                     <div className="flex items-center gap-2 text-cyan-400 text-sm">
                       <Briefcase className="w-4 h-4" />
                       <span>{exp.company}</span>
-                      <span className="text-slate-400 dark:text-slate-500">•</span>
-                      <span className="text-slate-600 dark:text-slate-400">{exp.location}</span>
+                      <span className="text-muted-foreground">•</span>
+                      <span className="text-muted-foreground">{exp.location}</span>
                     </div>
-                    <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400 text-sm">
+                    <div className="flex items-center gap-2 text-muted-foreground text-sm">
                       <Calendar className="w-4 h-4" />
                       <span>{exp.period}</span>
                     </div>
@@ -185,10 +185,7 @@ export default function Experience() {
                         </div>
 
                         <p
-                          className="flex-1 text-slate-600 dark:text-slate-300 
-          leading-relaxed text-sm sm:text-xs
-          text-justify hyphens-auto mb-1"
-                          style={{ textAlignLast: "right" }}
+                          className="flex-1 text-muted-foreground leading-relaxed text-sm"
                         >
                           {item}
                         </p>
@@ -197,13 +194,12 @@ export default function Experience() {
                   </div>
                   {/* Technologies */}
                   <div
-                    className={`flex flex-wrap gap-2 ${index % 2 === 0 ? "md:justify-end" : ""
-                      }`}
+                    className="flex flex-wrap gap-2"
                   >
                     {exp.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}
-                        className="px-3 py-1 bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-full text-xs text-slate-600 dark:text-slate-300"
+                        className="px-3 py-1 bg-muted text-muted-foreground border border-border rounded-full text-xs hover:border-cyan-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors"
                       >
                         {tech}
                       </span>

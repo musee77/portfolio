@@ -28,7 +28,7 @@ const projects: Project[] = [
       "NativeWind",
     ],
     github: "https://github.com/musee77/global-eats",
-    // demo: "https://www.prepzi.app/",
+    demo: "https://www.prepzi.app/",
     featured: true,
   },
   {
