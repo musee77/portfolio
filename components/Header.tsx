@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -69,11 +70,10 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled || isMobileMenuOpen
-          ? "bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-slate-800"
-          : "bg-transparent"
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled || isMobileMenuOpen
+        ? "bg-background/95 backdrop-blur-md shadow-lg border-b border-border"
+        : "bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -99,34 +99,36 @@ export default function Header() {
                   e.preventDefault();
                   scrollToSection(item.href);
                 }}
-                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
-                  activeSection === item.href.substring(1)
-                    ? "text-cyan-400 bg-slate-800/50"
-                    : "text-slate-300 hover:text-white hover:bg-slate-800/30"
-                }`}
+                className={`px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${activeSection === item.href.substring(1)
+                  ? "text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-800/50"
+                  : "text-black dark:text-slate-300 hover:text-cyan-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800/30"
+                  }`}
               >
                 {item.name}
               </a>
             ))}
           </nav>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden p-2 text-slate-300 hover:text-white transition-colors"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            aria-label="Toggle menu"
-          >
-            {isMobileMenuOpen ? (
-              <X className="w-6 h-6" />
-            ) : (
-              <Menu className="w-6 h-6" />
-            )}
-          </button>
+          {/* Theme Toggle and Mobile Menu Button */}
+          <div className="flex items-center gap-4">
+            <ThemeToggle />
+            <button
+              className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              {isMobileMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
-          <div className="md:hidden py-4 border-t border-slate-800 bg-slate-900/95 backdrop-blur-md">
+          <div className="md:hidden py-4 border-t border-border bg-background/95 backdrop-blur-md">
             <nav className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <a
@@ -136,11 +138,10 @@ export default function Header() {
                     e.preventDefault();
                     scrollToSection(item.href);
                   }}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    activeSection === item.href.substring(1)
-                      ? "text-cyan-400 bg-slate-800/50"
-                      : "text-slate-300 hover:text-white hover:bg-slate-800/30"
-                  }`}
+                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${activeSection === item.href.substring(1)
+                    ? "text-cyan-600 dark:text-cyan-400 bg-slate-100 dark:bg-slate-800/50"
+                    : "text-muted-foreground hover:text-foreground hover:bg-slate-100 dark:hover:bg-slate-800/30"
+                    }`}
                 >
                   {item.name}
                 </a>

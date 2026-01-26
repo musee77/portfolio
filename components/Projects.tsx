@@ -27,7 +27,7 @@ const projects: Project[] = [
       "Spoonacular API",
       "NativeWind",
     ],
-    github: "https://github.com/msnzilu/global-eats",
+    github: "https://github.com/musee77/global-eats",
     // demo: "https://www.prepzi.app/",
     featured: true,
   },
@@ -43,7 +43,7 @@ const projects: Project[] = [
       "FastAPI",
       "NextJS",
     ],
-    github: "https://github.com/msnzilu/agents47",
+    github: "https://github.com/musee77/agents47",
     // demo: "https://agents47.online",
     featured: true,
   },
@@ -62,7 +62,7 @@ const projects: Project[] = [
       "HTML/CSS",
       "JavaScript",
     ],
-    github: "https://github.com/msnzilu/employee-management-system",
+    github: "https://github.com/musee77/employee-management-system",
     // demo: "https://your-demo-url.com/",
     featured: false,
   },
@@ -83,7 +83,7 @@ const projects: Project[] = [
       "Puppeteer",
       "Stripe",
     ],
-    github: "https://github.com/msnzilu/vision.ai",
+    github: "https://github.com/musee77/vision.ai",
     demo: "https://synovae.io/",
     featured: true,
   },
@@ -94,13 +94,13 @@ export default function Projects() {
     <div className="space-y-12">
       {/* Section Header */}
       <div className="text-center space-y-4">
-        <h2 className="text-4xl sm:text-5xl font-bold text-white">
+        <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
           Featured{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
             Projects
           </span>
         </h2>
-        <p className="text-slate-400 max-w-2xl mx-auto">
+        <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           A showcase of my recent work in full-stack development and AI
           integration
         </p>
@@ -111,19 +111,18 @@ export default function Projects() {
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`group relative bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl overflow-hidden hover:border-cyan-500 transition-all duration-300 ${
-              project.featured ? "md:col-span-2 lg:col-span-1" : ""
-            }`}
+            className={`group relative bg-card border border-border rounded-xl overflow-hidden hover:border-cyan-500 transition-all duration-300 shadow-sm hover:shadow-md ${project.featured ? "md:col-span-2 lg:col-span-1" : ""
+              }`}
           >
             {/* Project Content */}
             <div className="p-6 space-y-4">
               {/* Title */}
-              <h3 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">
+              <h3 className="text-xl font-bold text-foreground group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                 {project.title}
               </h3>
 
               {/* Description */}
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-600 dark:text-slate-400 text-sm leading-relaxed">
                 {project.description}
               </p>
 
@@ -132,7 +131,7 @@ export default function Projects() {
                 {project.technologies.map((tech, techIndex) => (
                   <span
                     key={techIndex}
-                    className="px-3 py-1 bg-slate-700/50 border border-slate-600 rounded-full text-xs text-slate-300"
+                    className="px-3 py-1 bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-full text-xs text-slate-600 dark:text-slate-300"
                   >
                     {tech}
                   </span>
@@ -146,7 +145,7 @@ export default function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors text-sm"
+                    className="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors text-sm"
                   >
                     <Github className="w-4 h-4" />
                     <span>Code</span>
@@ -157,7 +156,7 @@ export default function Projects() {
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-slate-400 hover:text-cyan-400 transition-colors text-sm"
+                    className="flex items-center gap-2 text-slate-500 dark:text-slate-400 hover:text-cyan-600 dark:hover:text-cyan-400 transition-colors text-sm"
                   >
                     <ExternalLink className="w-4 h-4" />
                     <span>Live Demo</span>

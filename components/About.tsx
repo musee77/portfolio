@@ -8,13 +8,13 @@ export default function About() {
       <div className="space-y-12 sm:space-y-16">
         {/* Section Header */}
         <div className="text-center space-y-3">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground">
             About{" "}
-            <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
               Me
             </span>
           </h2>
-          <p className="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
+          <p className="text-gray-700 dark:text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
             Passionate about building intelligent solutions that make a
             difference
           </p>
@@ -23,7 +23,7 @@ export default function About() {
         {/* Main Content – Mobile: Stacked | Desktop: Side-by-side */}
         <div className="grid gap-10 lg:gap-16 lg:grid-cols-2 items-start">
           {/* Left: Bio Text */}
-          <div className="space-y-5 text-slate-300">
+          <div className="space-y-5 text-gray-900 dark:text-slate-300">
             <p className="text-base sm:text-lg leading-relaxed">
               I&apos;m a Software Engineer with a passion for creating
               innovative solutions that blend web technologies with machine
@@ -80,8 +80,8 @@ export default function About() {
             ].map((item, i) => (
               <div
                 key={i}
-                className="group bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl p-5 sm:p-6 
-                         hover:border-cyan-500 hover:bg-slate-800/40 transition-all duration-300"
+                className="group bg-card border border-border rounded-xl p-5 sm:p-6 
+                         hover:border-cyan-500 hover:bg-slate-50 dark:hover:bg-slate-800/40 transition-all duration-300 shadow-sm hover:shadow-md"
               >
                 <div className="space-y-3">
                   <div
@@ -90,10 +90,10 @@ export default function About() {
                   >
                     <item.icon className={`w-6 h-6 text-${item.color}-400`} />
                   </div>
-                  <h3 className="text-lg sm:text-xl font-bold text-white">
+                  <h3 className="text-lg sm:text-xl font-bold text-foreground">
                     {item.title}
                   </h3>
-                  <p className="text-sm sm:text-base text-slate-400 leading-snug">
+                  <p className="text-sm sm:text-base text-slate-600 dark:text-slate-400 leading-snug">
                     {item.desc}
                   </p>
                 </div>
@@ -113,11 +113,11 @@ export default function About() {
             <div key={i} className="text-center">
               <div
                 className="text-3xl sm:text-4xl md:text-5xl font-bold 
-                bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent"
+                bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent"
               >
                 {stat.number}
               </div>
-              <p className="text-slate-400 text-sm sm:text-base mt-2">
+              <p className="text-slate-600 dark:text-slate-400 text-sm sm:text-base mt-2">
                 {stat.label}
               </p>
             </div>

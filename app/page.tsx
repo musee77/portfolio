@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-950 via-slate-900 to-slate-950">
+    <div className="min-h-screen bg-background text-foreground">
       <Header />
       <main className="relative">
         {/* Hero Section */}
@@ -28,7 +28,7 @@ export default function Home() {
         {/* Skills Section */}
         <section
           id="skills"
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-muted"
         >
           <div className="max-w-7xl mx-auto">
             <Skills />
@@ -45,7 +45,7 @@ export default function Home() {
         {/* Experience Section */}
         <section
           id="experience"
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-muted"
         >
           <div className="max-w-7xl mx-auto">
             <Experience />
@@ -62,7 +62,7 @@ export default function Home() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="py-20 px-4 sm:px-6 lg:px-8 bg-slate-900/50"
+          className="py-20 px-4 sm:px-6 lg:px-8 bg-muted"
         >
           <div className="max-w-7xl mx-auto">
             <Contact />

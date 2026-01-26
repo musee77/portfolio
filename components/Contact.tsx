@@ -28,7 +28,7 @@ const socialLinks = [
   {
     icon: Github,
     label: "GitHub",
-    href: "https://github.com/msnzilu",
+    href: "https://github.com/musee77",
     color: "hover:text-white",
   },
   {
@@ -40,7 +40,7 @@ const socialLinks = [
   {
     icon: Twitter,
     label: "Twitter",
-    href: "https://x.com/msnzilu",
+    href: "https://x.com/__musee77",
     color: "hover:text-cyan-400",
   },
 ];
@@ -90,13 +90,13 @@ export default function Contact() {
     <div className="space-y-12">
       {/* Section Header */}
       <div className="text-center space-y-4">
-        <h2 className="text-4xl sm:text-5xl font-bold text-white">
+        <h2 className="text-4xl sm:text-5xl font-bold text-foreground">
           Get In{" "}
-          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-blue-500 to-cyan-500 dark:from-blue-400 dark:to-cyan-400 bg-clip-text text-transparent">
             Touch
           </span>
         </h2>
-        <p className="text-slate-400 max-w-2xl mx-auto">
+        <p className="text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
           I&apos;m always open to discussing new projects, creative ideas, or
           opportunities to be part of your visions.
         </p>
@@ -110,13 +110,13 @@ export default function Contact() {
             {contactInfo.map((info, index) => {
               const Icon = info.icon;
               const content = (
-                <div className="flex items-start gap-4 p-4 bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl hover:border-cyan-500 transition-all duration-300">
+                <div className="flex items-start gap-4 p-4 bg-card border border-border rounded-xl hover:border-cyan-500 transition-all duration-300 shadow-sm">
                   <div className="p-3 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-lg">
                     <Icon className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <p className="text-sm text-slate-400 mb-1">{info.label}</p>
-                    <p className="text-white font-medium">{info.value}</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400 mb-1">{info.label}</p>
+                    <p className="text-foreground font-medium">{info.value}</p>
                   </div>
                 </div>
               );
@@ -133,7 +133,7 @@ export default function Contact() {
 
           {/* Social Links */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold text-white">Connect With Me</h3>
+            <h3 className="text-xl font-bold text-foreground">Connect With Me</h3>
             <div className="flex gap-4">
               {socialLinks.map((social, index) => {
                 const Icon = social.icon;
@@ -143,7 +143,7 @@ export default function Contact() {
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`p-4 bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl ${social.color} transition-all duration-300 hover:scale-110 hover:border-cyan-500`}
+                    className={`p-4 bg-card border border-border rounded-xl ${social.color} dark:hover:text-white transition-all duration-300 hover:scale-110 hover:border-cyan-500 shadow-sm hover:shadow-md`}
                     aria-label={social.label}
                   >
                     <Icon className="w-6 h-6" />
@@ -155,7 +155,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Form */}
-        <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700 rounded-xl p-8">
+        <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
           {/* ADD onSubmit HERE */}
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div>
@@ -170,7 +170,7 @@ export default function Contact() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                className="w-full px-4 py-3 bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg text-foreground placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
                 placeholder="Your name"
               />
             </div>
@@ -187,7 +187,7 @@ export default function Contact() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                className="w-full px-4 py-3 bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg text-foreground placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -204,7 +204,7 @@ export default function Contact() {
                 id="subject"
                 name="subject"
                 required
-                className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
+                className="w-full px-4 py-3 bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg text-foreground placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors"
                 placeholder="What's this about?"
               />
             </div>
@@ -221,7 +221,7 @@ export default function Contact() {
                 name="message"
                 rows={5}
                 required
-                className="w-full px-4 py-3 bg-slate-900/50 border border-slate-700 rounded-lg text-white placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
+                className="w-full px-4 py-3 bg-slate-100 dark:bg-slate-900/50 border border-slate-200 dark:border-slate-700 rounded-lg text-foreground placeholder-slate-500 focus:outline-none focus:border-cyan-500 transition-colors resize-none"
                 placeholder="Your message..."
               ></textarea>
             </div>
