@@ -46,11 +46,11 @@ const projects: Project[] = [
     "OpenAI / GPT-4o",    // explicitly powers analysis & copy
     "Web Scraping & AI Pipeline"
   ],
-  github: null,           // no public repo linked
+  // github: no public repo linked
   demo: "https://www.lezmarket.io/",
   live: "https://www.lezmarket.io/",
-  featured: true,
-  note: "Live example of applied AI for real business impact — built on full-stack + LLM expertise"
+  featured: true
+  // note: "Live example of applied AI for real business impact — built on full-stack + LLM expertise"
 },
   {
     title: "Employee Management System",
