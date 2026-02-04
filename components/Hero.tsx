@@ -60,14 +60,14 @@ export default function Hero() {
             Get In Touch
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
-          <a
+          {/* <a
             href="/resume/Jcharles.pdf"
             download
             className="px-8 py-4 bg-card text-foreground rounded-lg font-semibold hover:bg-slate-100 dark:hover:bg-slate-800 transition-all duration-300 flex items-center gap-2 border border-border"
           >
             <Download className="w-5 h-5" />
             Download CV
-          </a>
+          </a> */}
         </div>
 
         {/* Social Links */}
