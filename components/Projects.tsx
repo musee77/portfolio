@@ -8,49 +8,54 @@ interface Project {
   technologies: string[];
   github?: string;
   demo?: string;
+  live?: string;
   featured: boolean;
+  status?: string;
 }
 
 const projects: Project[] = [
-  {
-    title: "Prepzi - AI-Powered Meal Planning App",
-    description:
-      "A smart meal planning app that generates personalized weekly and monthly plans based on your inventory and dietary preferences. Features waste-reducing inventory-first planning, international cuisine support, nutrition tracking, and meal timers with offline-first architecture.",
-    technologies: [
-      "React Native",
-      "Expo",
-      "TypeScript",
-      "Firebase Firestore",
-      "Firebase Auth",
-      "Redux Toolkit",
-      "TanStack Query",
-      "Spoonacular API",
-      "NativeWind",
-    ],
-    github: "https://github.com/musee77/global-eats",
-    demo: "https://www.prepzi.app/",
-    featured: true,
-  },
-  {
-    title: "Agents47 - Multi-Agent AI Platform",
-    description:
-      "A sophisticated multi-agent AI system built with LangChain and LangGraph. Features autonomous agents for research, content creation, and data analysis with real-time collaboration capabilities.",
-    technologies: [
-      "Python",
-      "LangChain",
-      "LangGraph",
-      "OpenAI",
-      "FastAPI",
-      "NextJS",
-    ],
-    github: "https://github.com/musee77/agents47",
-    // demo: "https://agents47.online",
-    featured: true,
-  },
+{
+  title: "Prepzi - Smart Meal Planning App",
+  description:
+    "AI-powered meal planning that reduces food waste by 90%. Generates personalized weekly/monthly plans from your inventory, with smart shopping lists, 10+ cuisines, dietary preferences, and offline-first sync.",
+  technologies: [
+    "React Native",
+    "Expo",
+    "TypeScript",
+    "Firebase Firestore",
+    "Firebase Auth",
+    "Redux Toolkit",
+    "TanStack Query",
+    "Spoonacular API",
+    "NativeWind",
+    "Offline-First"
+  ],
+  github: "https://github.com/musee77/global-eats",
+  demo: "https://play.google.com/store/apps/details?id=com.prepzi.app",
+  live: "https://play.google.com/store/apps/details?id=com.prepzi.app",
+  featured: true,
+  status: "Live on Google Play • Updated Jan 2026 • Free with premium in-app purchases"
+},
+{
+  title: "LezMarket - AI Website Conversion Optimizer",
+  description:
+    "SaaS tool that analyzes websites using 6 persuasion psychology principles. Provides conversion scores, prioritized recommendations, and GPT-4o-generated headlines and CTAs.",
+  technologies: [
+    "Python",             // backend assumed
+    "Next.js",            // modern UI
+    "OpenAI / GPT-4o",    // explicitly powers analysis & copy
+    "Web Scraping & AI Pipeline"
+  ],
+  github: null,           // no public repo linked
+  demo: "https://www.lezmarket.io/",
+  live: "https://www.lezmarket.io/",
+  featured: true,
+  note: "Live example of applied AI for real business impact — built on full-stack + LLM expertise"
+},
   {
     title: "Employee Management System",
     description:
-      "A full-stack enterprise application for managing employee records. Features comprehensive CRUD operations, RESTful API architecture, secure authentication, real-time data validation, and responsive UI. Built with modern Spring Boot backend and React frontend for efficient HR operations and employee data management.",
+      "Full-stack enterprise app for HR operations with CRUD, REST API, secure auth, and responsive UI. Built with Spring Boot and React.",
     technologies: [
       "Java",
       "Spring Boot",
@@ -67,9 +72,9 @@ const projects: Project[] = [
     featured: false,
   },
   {
-    title: "Synovae - AI-Powered Job Application Platform",
+    title: "Synovae - AI Job Application Platform",
     description:
-      "An AI-powered platform that automates job applications. Features intelligent job matching, AI-generated custom CVs and cover letters, ML-powered browser autofill, and comprehensive application tracking with a freemium subscription model.",
+      "Automates job applications with intelligent matching, AI-generated CVs and cover letters, ML-powered browser autofill, and application tracking.",
     technologies: [
       "Python",
       "JavaScript",

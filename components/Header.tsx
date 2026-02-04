@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
-import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#home" },
@@ -109,9 +108,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Theme Toggle and Mobile Menu Button */}
+          {/* Mobile Menu Button */}
           <div className="flex items-center gap-4">
-            <ThemeToggle />
             <button
               className="md:hidden p-2 text-muted-foreground hover:text-foreground transition-colors"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

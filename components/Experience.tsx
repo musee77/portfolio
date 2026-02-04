@@ -73,33 +73,6 @@ const experiences: Experience[] = [
       "nginx",
     ],
   },
-  {
-    title: "Junior Full-Stack Developer Intern",
-    company: "FinTech & Innovations Ltd",
-    location: "Remote (Nairobi, Kenya)",
-    period: "June 2024 – December 2024",
-    description: [
-      "Built backend APIs with Java/Spring Boot and Python/Django in 5-person remote team",
-      "Developed secure RESTful APIs for high-concurrency payment processing",
-      "Optimized PostgreSQL queries, reduced load times 20%",
-      "Implemented authentication and data endpoints",
-      "Wrote tested code with pytest following best practices",
-      "Containerized environments with Docker, supported QA testing",
-    ],
-    technologies: [
-      "Java",
-      "Spring Boot",
-      "Python",
-      "Django",
-      "Django REST Framework",
-      "NextJS",
-      "PostgreSQL",
-      "Docker",
-      "nginx",
-      "Git & GitHub",
-      "pytest",
-    ],
-  },
 ];
 
 export default function Experience() {
