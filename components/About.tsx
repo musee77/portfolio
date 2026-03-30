@@ -1,6 +1,6 @@
 "use client";
 
-import { Code2, Lightbulb, Users, Zap } from "lucide-react";
+import { Database, Brain, BarChart3, Code2 } from "lucide-react";
 
 export default function About() {
   return (
@@ -15,8 +15,8 @@ export default function About() {
             </span>
           </h2>
           <p className="text-gray-700 dark:text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Passionate about building intelligent solutions that make a
-            difference
+            Turning complex data into actionable insights and building reliable,
+            scalable systems
           </p>
         </div>
 
@@ -25,27 +25,23 @@ export default function About() {
           {/* Left: Bio Text */}
           <div className="space-y-5 text-gray-900 dark:text-slate-300">
             <p className="text-base sm:text-lg leading-relaxed">
-              I&apos;m a Software Engineer with a passion for creating
-              innovative solutions that blend web technologies with machine
-              learning capabilities. With expertise in both frontend and backend
-              development, I build scalable applications that solve real-world
-              problems through intelligent automation.
+              I&apos;m a Software & Data Engineer with hands-on experience
+              across the full data lifecycle — from pipeline design and SQL
+              analytics to Python backend development and BI reporting. I
+              specialise in turning complex data into actionable business
+              insights and building reliable, scalable systems.
             </p>
             <p className="text-base sm:text-lg leading-relaxed">
-              My journey took an unconventional path - I began my career in
-              disaster management before transitioning back to my roots in tech.
-              This unique background gives me a problem-solving perspective that
-              combines crisis response thinking with technical innovation.
-              I&apos;ve since worked on diverse projects ranging from FinTech
-              platforms to intelligent multi-agent systems, always focused on
-              writing clean, maintainable code and creating intuitive user
-              experiences.
+              With a Computer Science foundation and professional certifications
+              in Software Engineering and Data Science, I&apos;ve built a
+              career across data engineering, backend development, and AI/ML
+              integration — always focused on writing clean, maintainable code
+              and delivering impactful solutions.
             </p>
             <p className="text-base sm:text-lg leading-relaxed">
-              When I&apos;m not coding, I&apos;m exploring emerging
-              technologies, contributing to open-source projects, or sharing
-              knowledge with the developer community. I&apos;m always eager to
-              take on new challenges and collaborate on projects that push the
+              I bring a strong foundation in Agile delivery, cloud-native
+              tools, and AI/ML integration. I&apos;m always eager to take on
+              new challenges and collaborate on projects that push the
               boundaries of what&apos;s possible.
             </p>
           </div>
@@ -54,27 +50,27 @@ export default function About() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
             {[
               {
-                icon: Code2,
-                title: "Full-Stack Expertise",
-                desc: "React · Next.js · Django · Spring Boot",
+                icon: Database,
+                title: "Data Engineering",
+                desc: "PostgreSQL · ETL/ELT · Airflow · Kafka · pgvector",
                 color: "blue",
               },
               {
-                icon: Lightbulb,
-                title: "AI Integration",
-                desc: "LangChain · OpenAI · RAG · Multi-Agent Systems",
+                icon: Brain,
+                title: "AI / ML Integration",
+                desc: "LangChain · OpenAI · RAG · Semantic Search · Claude",
                 color: "cyan",
               },
               {
-                icon: Zap,
-                title: "Performance Focused",
-                desc: "Optimized, scalable, production-ready code",
+                icon: BarChart3,
+                title: "BI & Analytics",
+                desc: "Power BI · Tableau · Dashboards · DAX · Data Modeling",
                 color: "purple",
               },
               {
-                icon: Users,
-                title: "Team Collaboration",
-                desc: "Agile · Code Reviews · Remote-First Teams",
+                icon: Code2,
+                title: "Python Backend",
+                desc: "Django · DRF · FastAPI · Celery · pytest",
                 color: "green",
               },
             ].map((item, i) => (
@@ -106,8 +102,8 @@ export default function About() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 pt-8">
           {[
             { number: "3+", label: "Years Experience" },
-            { number: "20+", label: "Projects Completed" },
-            { number: "15+", label: "Technologies Mastered" },
+            { number: "5+", label: "Professional Roles" },
+            { number: "20+", label: "Technologies Mastered" },
             { number: "100%", label: "Commitment" },
           ].map((stat, i) => (
             <div key={i} className="text-center">

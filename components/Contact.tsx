@@ -1,26 +1,14 @@
 "use client";
 
-import { Mail, Phone, MapPin, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Github, Linkedin, Twitter } from "lucide-react";
 import { useState } from "react";
 
 const contactInfo = [
   {
     icon: Mail,
     label: "Email",
-    value: "cjmatheka@gmail.com",
-    href: "mailto:cjmatheka@gmail.com",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
-    value: "+254 719 537 813",
-    href: "tel:+254719537813",
-  },
-  {
-    icon: MapPin,
-    label: "Location",
-    value: "Nairobi, Kenya",
-    href: null,
+    value: "talktome@juliusmatheka.space",
+    href: "mailto:talktome@juliusmatheka.space",
   },
 ];
 

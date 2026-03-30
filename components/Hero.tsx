@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { ArrowRight, Download, Github, Linkedin, Mail } from "lucide-react";
 
@@ -41,14 +41,15 @@ export default function Hero() {
 
         {/* Title */}
         <p className="text-xl sm:text-2xl lg:text-3xl text-slate-600 dark:text-slate-300 mb-6 animate-fade-in-up delay-200">
-          Software Engineer
+          Software Engineer · Data Engineer · AI & ML Developer
         </p>
 
         {/* Description */}
         <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-10 animate-fade-in-up delay-300">
-          Crafting innovative web applications and intelligent systems that
-          solve real-world problems. Focused on building scalable solutions with
-          modern technologies and machine learning capabilities.
+          Results-driven Software & Data Engineer with hands-on experience
+          across the full data lifecycle — from pipeline design and SQL analytics
+          to Python backend development and BI reporting. Building reliable,
+          scalable systems with AI/ML integration.
         </p>
 
         {/* CTA Buttons */}
@@ -91,7 +92,7 @@ export default function Hero() {
             <Linkedin className="w-6 h-6" />
           </a>
           <a
-            href="mailto:cjmatheka@gmail.com"
+            href="mailto:talktome@juliusmatheka.space"
             className="p-3 bg-card border border-border rounded-lg text-slate-600 dark:text-slate-300 hover:text-cyan-600 dark:hover:text-white hover:border-cyan-500 transition-all duration-300 hover:scale-110 shadow-sm"
             aria-label="Email"
           >

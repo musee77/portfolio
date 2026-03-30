@@ -19,49 +19,46 @@ interface Certification {
 
 const education: Education[] = [
   {
-    degree: "Bachelor of Science in Computer Science",
-    institution: "Zetech University",
-    location: "Nairobi, Kenya",
-    period: "2019 - 2023",
+    degree: "Professional Certification — Software Engineering",
+    institution: "ALX Africa",
+    location: "Remote",
+    period: "Jan 2024 – Feb 2025",
     description:
-      "Graduated with Second Class Honors. Specialized in Artificial Intelligence and Software Engineering. Final year project on AI-powered recommendation systems.",
+      "Full-stack development, algorithms, Django/React, Java/Spring Boot.",
   },
   {
-    degree:
-      "Bachelor of Science in Disaster Management and International Diplomacy",
-    institution: "Masinde Muliro University of Science and Technology",
+    degree: "Professional Certification — Data Science",
+    institution: "Moringa School",
     location: "Nairobi, Kenya",
-    period: "2012 - 2016",
+    period: "Jan 2023 – Nov 2023",
     description:
-      "Graduated with Second Class Honors. Specialized in Disaster and Risk Management.",
+      "Machine Learning, ETL pipelines, Python, SQL, TensorFlow, Tableau.",
+  },
+  {
+    degree: "B.Sc. Computer Science",
+    institution: "Kenyatta University",
+    location: "Nairobi, Kenya",
+    period: "2012 – 2016",
+    description:
+      "Strong foundation in algorithms, data structures, software engineering, and systems design.",
   },
 ];
 
 const certifications: Certification[] = [
   {
-    name: "Software Engineering Professional Certificate",
-    issuer: "ALX Africa",
-    date: "Feb 2025",
-  },
-  {
-    name: "ETL and Data Pipelines with Shell, Airflow and Kafka",
+    name: "ETL and Data Pipelines with Shell, Airflow & Kafka",
     issuer: "IBM",
-    date: "Dec 2024",
+    date: "2024",
   },
   {
-    name: "Getting Started with Data Warehousing and BI Analytics",
+    name: "Data Warehousing and BI Analytics",
     issuer: "IBM",
-    date: "Sept 2024",
+    date: "2024",
   },
   {
-    name: "Hands-on Introduction to Linux Commands and Shell Scripting",
+    name: "Linux Commands and Shell Scripting",
     issuer: "IBM",
-    date: "April 2024",
-  },
-  {
-    name: "Data Science Professional Certificate",
-    issuer: "Moringa School",
-    date: "Nov 2023",
+    date: "2024",
   },
 ];
 
@@ -98,9 +95,9 @@ export default function Education() {
                 <span className="text-cyan-600 dark:text-cyan-400 font-medium">
                   {edu.institution}
                 </span>
-                <span className="text-slate-500">�</span>
+                <span className="text-slate-500">•</span>
                 <span className="text-slate-500 dark:text-slate-400">{edu.location}</span>
-                <span className="text-slate-500">�</span>
+                <span className="text-slate-500">•</span>
                 <div className="flex items-center gap-1 text-slate-400">
                   <Calendar className="w-4 h-4" />
                   <span>{edu.period}</span>

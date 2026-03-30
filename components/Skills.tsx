@@ -1,6 +1,6 @@
 "use client";
 
-import { Code, Database, Brain, Globe, LucideIcon } from "lucide-react";
+import { Code, Database, Brain, BarChart3, Globe, Server, LucideIcon } from "lucide-react";
 
 interface Skill {
   name: string;
@@ -16,41 +16,83 @@ interface SkillCategory {
 
 const skillCategories: SkillCategory[] = [
   {
-    title: "Full Stack Development",
-    icon: Code,
+    title: "Data & SQL",
+    icon: Database,
     color: "from-blue-500 to-cyan-500",
     skills: [
-      { name: "React / Next.js", level: 88 },
-      { name: "TypeScript", level: 72 },
-      { name: "Python / Django", level: 95 },
-      { name: "Java / Spring Boot", level: 68 },
-      { name: "FastAPI", level: 85 },
-      { name: "Tailwind CSS", level: 90 },
-      { name: "RESTful APIs", level: 88 },
+      { name: "PostgreSQL", level: 92 },
+      { name: "MySQL", level: 80 },
+      { name: "SQL (Advanced)", level: 95 },
+      { name: "ETL / ELT Pipelines", level: 88 },
+      { name: "Apache Airflow", level: 82 },
+      { name: "Apache Kafka", level: 75 },
+      { name: "Data Warehousing", level: 85 },
+      { name: "pgvector", level: 78 },
     ],
   },
   {
-    title: "AI & Machine Learning",
+    title: "BI & Analytics",
+    icon: BarChart3,
+    color: "from-emerald-500 to-teal-500",
+    skills: [
+      { name: "Power BI", level: 88 },
+      { name: "Tableau", level: 82 },
+      { name: "Data Modeling", level: 85 },
+      { name: "Reporting Dashboards", level: 90 },
+      { name: "DAX", level: 78 },
+    ],
+  },
+  {
+    title: "Python",
+    icon: Code,
+    color: "from-yellow-500 to-orange-500",
+    skills: [
+      { name: "Django / DRF", level: 95 },
+      { name: "FastAPI", level: 85 },
+      { name: "Pandas / NumPy", level: 82 },
+      { name: "Celery", level: 80 },
+      { name: "pytest", level: 85 },
+      { name: "Shell Scripting", level: 72 },
+    ],
+  },
+  {
+    title: "AI / ML",
     icon: Brain,
     color: "from-purple-500 to-pink-500",
     skills: [
-      { name: "LangChain / RAG", level: 88 },
-      { name: "OpenAI / Claude APIs", level: 90 },
-      { name: "Vector DBs (pgvector)", level: 72 },
-      { name: "Prompt Engineering", level: 75 },
-      { name: "TensorFlow / PyTorch", level: 85 },
-      { name: "Scikit-learn", level: 80 },
+      { name: "LangChain", level: 88 },
+      { name: "OpenAI (GPT-4o)", level: 90 },
+      { name: "TensorFlow", level: 75 },
+      { name: "RAG Systems", level: 88 },
+      { name: "Vector Embeddings", level: 82 },
+      { name: "Semantic Search", level: 85 },
+      { name: "Claude API", level: 80 },
     ],
   },
   {
-    title: "Databases & DevOps",
-    icon: Database,
+    title: "Frontend",
+    icon: Globe,
+    color: "from-cyan-500 to-blue-500",
+    skills: [
+      { name: "React / Next.js", level: 85 },
+      { name: "TypeScript", level: 78 },
+      { name: "JavaScript", level: 88 },
+      { name: "Tailwind CSS", level: 90 },
+      { name: "HTMX", level: 72 },
+      { name: "HTML / CSS", level: 92 },
+    ],
+  },
+  {
+    title: "DevOps",
+    icon: Server,
     color: "from-orange-500 to-red-500",
     skills: [
-      { name: "PostgreSQL", level: 92 },
-      { name: "Docker", level: 92 },
-      { name: "Redis + Celery", level: 80 },
-      { name: "GitHub Actions", level: 88 },
+      { name: "Docker", level: 88 },
+      { name: "GitHub Actions / CI-CD", level: 85 },
+      { name: "Linux", level: 80 },
+      { name: "Git / GitHub", level: 92 },
+      { name: "Agile / Scrum", level: 85 },
+      { name: "Redis", level: 78 },
     ],
   },
 ];
@@ -116,40 +158,6 @@ export default function Skills() {
             </div>
           );
         })}
-      </div>
-
-      {/* Additional Skills Section */}
-      <div className="bg-card border border-border rounded-xl p-8 shadow-sm">
-        <h3 className="text-2xl font-bold text-foreground mb-6">
-          Other Skills & Technologies
-        </h3>
-        <div className="flex flex-wrap gap-3">
-          {[
-            "Agile/Scrum",
-            "Microservices",
-            "WebSockets",
-            "Stripe Integration",
-            "M-Pesa API",
-            "OAuth",
-            "JWT",
-            "Nginx",
-            "RabbitMQ",
-            "Celery",
-            "Pandas",
-            "NumPy",
-            "Selenium",
-            "Beautiful Soup",
-            "Figma",
-            "Jira",
-          ].map((skill, index) => (
-            <span
-              key={index}
-              className="px-4 py-2 bg-slate-100 dark:bg-slate-700/50 border border-slate-200 dark:border-slate-600 rounded-full text-sm text-slate-600 dark:text-slate-300 hover:border-cyan-500 hover:text-cyan-600 dark:hover:text-cyan-400 transition-all duration-300 shadow-sm"
-            >
-              {skill}
-            </span>
-          ))}
-        </div>
       </div>
     </div>
   );

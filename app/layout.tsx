@@ -6,26 +6,31 @@ import { Analytics } from "@vercel/analytics/next";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
-  title: "Julius Matheka Charles | Software Engineer",
+  title: "Julius Matheka Charles | Software Engineer · Data Engineer · AI & ML Developer",
   description:
-    "Software Engineer specializing in building scalable web applications with machine learning capabilities. Expert in Python, Java, React, and modern web technologies.",
+    "Results-driven Software & Data Engineer with hands-on experience across the full data lifecycle — from pipeline design and SQL analytics to Python backend development, BI reporting, and AI/ML integration.",
   keywords: [
     "Software Engineer",
+    "Data Engineer",
+    "AI Developer",
     "Machine Learning",
     "Python",
-    "Java",
+    "Django",
+    "PostgreSQL",
+    "ETL Pipelines",
+    "Power BI",
+    "LangChain",
     "React",
     "Next.js",
-    "Django",
-    "Web Development",
+    "SQL",
   ],
   authors: [{ name: "Julius Matheka Charles" }],
   metadataBase: new URL("https://www.juliusmatheka.space/"),
   robots: "index, follow",
   openGraph: {
-    title: "Julius Matheka Charles | Software Engineer",
+    title: "Julius Matheka Charles | Software Engineer · Data Engineer · AI & ML Developer",
     description:
-      "Building intelligent solutions through scalable web applications and machine learning integration",
+      "Results-driven Software & Data Engineer — pipeline design, SQL analytics, Python backend, BI reporting, and AI/ML integration",
     url: "https://www.juliusmatheka.space/",
     siteName: "Julius Matheka Portfolio",
     locale: "en_US",
@@ -41,9 +46,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Julius Matheka Charles | Software Engineer",
+    title: "Julius Matheka Charles | Software Engineer · Data Engineer · AI & ML Developer",
     description:
-      "Building intelligent solutions through scalable web applications and machine learning integration",
+      "Results-driven Software & Data Engineer — pipeline design, SQL analytics, Python backend, BI reporting, and AI/ML integration",
     images: ["/logo/logo.png"],
   },
 };
