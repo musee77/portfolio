@@ -29,7 +29,7 @@ const education: Education[] = [
   {
     degree: "Professional Certification — Data Science",
     institution: "Moringa School",
-    location: "Nairobi, Kenya",
+   location: "Remote",
     period: "Jan 2023 – Nov 2023",
     description:
       "Machine Learning, ETL pipelines, Python, SQL, TensorFlow, Tableau.",
@@ -38,7 +38,7 @@ const education: Education[] = [
     degree: "B.Sc. Computer Science",
     institution: "Kenyatta University",
     location: "Nairobi, Kenya",
-    period: "2012 – 2016",
+    period: "2016 – 2020",
     description:
       "Strong foundation in algorithms, data structures, software engineering, and systems design.",
   },
