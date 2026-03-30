@@ -89,7 +89,7 @@ export default function Header() {
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-1">
+          <nav aria-label="Main navigation" className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <a
                 key={item.name}
@@ -127,7 +127,7 @@ export default function Header() {
         {/* Mobile Navigation */}
         {isMobileMenuOpen && (
           <div className="md:hidden py-4 border-t border-border bg-background/95 backdrop-blur-md">
-            <nav className="flex flex-col space-y-2">
+            <nav aria-label="Mobile navigation" className="flex flex-col space-y-2">
               {navItems.map((item) => (
                 <a
                   key={item.name}

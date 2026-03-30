@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Header />
-      <main className="relative">
+      <main id="main-content" className="relative">
         {/* Hero Section */}
-        <section id="home" className="min-h-screen">
+        <section id="home" aria-label="Introduction" className="min-h-screen">
           <Hero />
         </section>
 
         {/* About Section */}
-        <section id="about" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="about" aria-label="About Me" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <About />
           </div>
@@ -28,6 +28,7 @@ export default function Home() {
         {/* Skills Section */}
         <section
           id="skills"
+          aria-label="Skills and Expertise"
           className="py-20 px-4 sm:px-6 lg:px-8 bg-muted"
         >
           <div className="max-w-7xl mx-auto">
@@ -36,7 +37,7 @@ export default function Home() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="projects" aria-label="Key Projects" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <Projects />
           </div>
@@ -45,6 +46,7 @@ export default function Home() {
         {/* Experience Section */}
         <section
           id="experience"
+          aria-label="Work Experience"
           className="py-20 px-4 sm:px-6 lg:px-8 bg-muted"
         >
           <div className="max-w-7xl mx-auto">
@@ -53,7 +55,7 @@ export default function Home() {
         </section>
 
         {/* Education Section */}
-        <section id="education" className="py-20 px-4 sm:px-6 lg:px-8">
+        <section id="education" aria-label="Education and Certifications" className="py-20 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto">
             <Education />
           </div>
@@ -62,6 +64,7 @@ export default function Home() {
         {/* Contact Section */}
         <section
           id="contact"
+          aria-label="Contact Me"
           className="py-20 px-4 sm:px-6 lg:px-8 bg-muted"
         >
           <div className="max-w-7xl mx-auto">
