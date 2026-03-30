@@ -38,7 +38,7 @@ const education: Education[] = [
     degree: "B.Sc. Computer Science",
     institution: "Kenyatta University",
     location: "Nairobi, Kenya",
-    period: "2016 – 2020",
+    period: "2018 – 2022",
     description:
       "Strong foundation in algorithms, data structures, software engineering, and systems design.",
   },
