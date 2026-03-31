@@ -17,7 +17,7 @@ const experiences: Experience[] = [
     title: "Junior BI Developer",
     company: "Axmed",
     location: "Remote",
-    period: "Feb 2026 – Present",
+    period: "March 2025 – Dec 2025",
     description: [
       "Design and maintain Power BI and Tableau dashboards surfacing KPIs across sales, operations, and finance — used weekly by senior management for decision-making.",
       "Build and optimise SQL data models (star and snowflake schemas) in PostgreSQL to support fast, accurate reporting across multi-million-row datasets.",
@@ -36,9 +36,9 @@ const experiences: Experience[] = [
   },
   {
     title: "Junior Python Data Engineer",
-    company: "Maesk Kenya",
+    company: "Maesk Group, Kenya",
     location: "On-site",
-    period: "Aug 2025 – Dec 2025",
+    period: "Sep 2024– Feb 2025",
     description: [
       "Designed and implemented end-to-end data pipelines in Python and SQL — covering raw ingestion, staging, transformation, and analytics layers across PostgreSQL databases.",
       "Built and scheduled Apache Airflow DAGs to automate recurring ETL jobs, replacing manual processes and improving data freshness for downstream consumers.",
@@ -59,9 +59,9 @@ const experiences: Experience[] = [
   },
   {
     title: "Junior Python Developer",
-    company: "Maesk Kenya",
+    company: "Maesk group, Kenya",
     location: "On-site",
-    period: "May 2025 – Aug 2025",
+    period: "March 2024 – Aug 2024",
     description: [
       "Built scalable Python backend services and data ingestion scripts for small business clients — automating data collection from APIs and CSV sources into PostgreSQL.",
       "Developed Django-based web applications with user authentication, role-based access, and data export functionality tailored to client reporting needs.",
@@ -84,7 +84,7 @@ const experiences: Experience[] = [
     title: "Python Developer Intern",
     company: "Innovation Labs",
     location: "Remote",
-    period: "Feb 2024 – March 2025",
+    period: "Aug 2023 – March 2024",
     type: "Internship — Python Backend Development",
     description: [
       "Developed and maintained RESTful APIs using Python and Django REST Framework, supporting internal data management tools used by operations teams.",
@@ -103,9 +103,9 @@ const experiences: Experience[] = [
   },
   {
     title: "Data Analyst Intern (SQL)",
-    company: "Windle.org",
+    company: "Windle International, Kenya",
     location: "On-site",
-    period: "January 2023 – August 2023",
+    period: "January 2023 – May 2023",
     type: "Internship — SQL & Data Analysis",
     description: [
       "Wrote complex SQL queries across PostgreSQL databases to extract, clean, and analyse business datasets for weekly management reporting.",
