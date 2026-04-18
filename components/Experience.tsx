@@ -17,7 +17,7 @@ const experiences: Experience[] = [
     title: "Junior Python Data Engineer",
     company: "Maesk Group, Kenya",
     location: "On-site",
-    period: "Sep 2025– Feb 2026",
+    period: "Sep 2025 - Present",
     description: [
       "Designed and implemented end-to-end data pipelines in Python and SQL — covering raw ingestion, staging, transformation, and analytics layers across PostgreSQL databases.",
       "Built and scheduled Apache Airflow DAGs to automate recurring ETL jobs, replacing manual processes and improving data freshness for downstream consumers.",
