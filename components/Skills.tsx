@@ -53,6 +53,7 @@ const skillCategories: SkillCategory[] = [
       { name: "Celery", level: 80 },
       { name: "pytest", level: 85 },
       { name: "Shell Scripting", level: 72 },
+      { name: "SQLAlchemy", level: 78 },
     ],
   },
   {
@@ -93,6 +94,7 @@ const skillCategories: SkillCategory[] = [
       { name: "Git / GitHub", level: 92 },
       { name: "Agile / Scrum", level: 85 },
       { name: "Redis", level: 78 },
+      { name: "Ansible", level: 78 },
     ],
   },
 ];
