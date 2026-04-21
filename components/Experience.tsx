@@ -26,7 +26,6 @@ const experiences: Experience[] = [
     "Containerised applications with Docker and set up GitHub Actions CI/CD pipelines, enabling reliable and repeatable deployments across client environments.",
     "Designed and built end-to-end ETL pipelines in Python and SQL, covering raw ingestion, staging, transformation, and analytics layers across PostgreSQL databases.",
     "Automated recurring data workflows using Apache Airflow DAGs, eliminating manual processes and improving data freshness for downstream teams.",
-    "Developed a semantic job-matching system with LangChain and pgvector, vectorising CV content for similarity search across 2,400+ job listings.",
   ],
     technologies: [
       "Python",
