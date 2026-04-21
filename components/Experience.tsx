@@ -27,10 +27,6 @@ const experiences: Experience[] = [
     "Designed and built end-to-end ETL pipelines in Python and SQL, covering raw ingestion, staging, transformation, and analytics layers across PostgreSQL databases.",
     "Automated recurring data workflows using Apache Airflow DAGs, eliminating manual processes and improving data freshness for downstream teams.",
     "Developed a semantic job-matching system with LangChain and pgvector, vectorising CV content for similarity search across 2,400+ job listings.",
-    "Applied incremental loading strategies (upsert / ON CONFLICT DO UPDATE) with run logging to ensure scalable, restartable pipeline execution.",
-    "Built a RAG-powered knowledge base with PostgreSQL/pgvector and LangChain, achieving sub-3-second query response times in production.",
-    "Built scalable Python backend services and data ingestion scripts for small business clients — automating data collection from APIs and CSV sources into PostgreSQL.",
-    "Maintained 80%+ test coverage using pytest; resolved bugs and performance bottlenecks identified through production monitoring and client feedback.",
   ],
     technologies: [
       "Python",
