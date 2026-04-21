@@ -13,12 +13,14 @@ interface Experience {
 }
 
 const experiences: Experience[] = [
+ 
   {
-    title: "Junior Python Data Engineer",
-    company: "Maesk Group, Kenya",
-    location: "On-site",
-    period: "Sep 2025 - Present",
-    description: [
+    title: 'Junior Python Developer',
+    company: "Paystack        ",
+    location: "Remote",
+    period: "Aug 2024 – June 2025",
+    type: "Internship — SQL & Data Analysis",
+   description: [
       "Designed and implemented end-to-end data pipelines in Python and SQL — covering raw ingestion, staging, transformation, and analytics layers across PostgreSQL databases.",
       "Built and scheduled Apache Airflow DAGs to automate recurring ETL jobs, replacing manual processes and improving data freshness for downstream consumers.",
       "Engineered a semantic job-matching pipeline using Python, LangChain, and pgvector — parsing CVs and vectorising content for similarity search across 2,400+ live listings.",
@@ -27,6 +29,13 @@ const experiences: Experience[] = [
     ],
     technologies: [
       "Python",
+      "Django",
+      "FastAPI",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Docker",
+      "Git",
       "PostgreSQL",
       "Apache Airflow",
       "LangChain",
@@ -34,27 +43,6 @@ const experiences: Experience[] = [
       "SQL",
       "ETL Pipelines",
       "RAG",
-    ],
-  },
-  {
-    title: 'Junior Python Developer',
-    company: "Paystack        ",
-    location: "Remote",
-    period: "Aug 2024 – June 2025",
-    type: "Internship — SQL & Data Analysis",
-    description: [
-      "Wrote complex SQL queries across PostgreSQL databases to extract, clean, and analyse business datasets for weekly management reporting.",
-      "Built and maintained ETL pipelines that pulled data from multiple source systems into a central data warehouse, reducing manual data preparation time by 35%.",
-      "Created data quality checks using SQL (NULL validation, duplicate detection, row count reconciliation) to ensure pipeline integrity across all reporting tables.",
-      "Collaborated with senior analysts to design dashboard-ready summary views and aggregation tables consumed by Power BI reports.",
-      "Documented SQL query logic and pipeline steps, improving team knowledge sharing and onboarding efficiency.",
-    ],
-    technologies: [
-      "PostgreSQL",
-      "SQL",
-      "ETL Pipelines",
-      "Power BI",
-      "Data Warehousing",
     ],
   },
   {
