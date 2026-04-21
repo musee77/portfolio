@@ -18,8 +18,8 @@ const experiences: Experience[] = [
     title: 'Junior Python Developer',
     company: "Paystack        ",
     location: "Remote",
-    period: "Aug 2024 – June 2025",
-    type: "Internship — SQL & Data Analysis",
+    period: "Aug 2024 –Dec 2025",
+    type: "Junior Software Engineer",
    description: [
       "Designed and implemented end-to-end data pipelines in Python and SQL — covering raw ingestion, staging, transformation, and analytics layers across PostgreSQL databases.",
       "Built and scheduled Apache Airflow DAGs to automate recurring ETL jobs, replacing manual processes and improving data freshness for downstream consumers.",
